@@ -262,7 +262,7 @@ files:
             sample: true
         islnk:
             description: If the path is a symbolic link or junction or not.
-            returned: success, path exists
+            returned: success, path exists or deduped files
             type: bool
             sample: true
         isreadonly:
@@ -287,7 +287,7 @@ files:
             sample: 1477984205.15
         lnk_source:
             description: The target of the symbolic link, will return null if not a link or the link is broken.
-            return: success, path exists, path is a symbolic link
+            returned: success, path exists, path is a symbolic link
             type: str
             sample: C:\temp
         owner:
